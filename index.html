@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>Arduino Mega Port Helper</title>
+        <style>
+            table {
+                width: 100%;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            thead, tfoot {
+                color: white;
+                background-color: black;
+            }
+
+            .data {
+                background-color: lightseagreen;
+            }
+
+            .address {
+                background-color: lightslategray;
+            }
+        </style>
+    </head>
+    <h1>Arduino Mega</h1>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>PA1</th>
+                    <th>PA3</th>
+                    <th>PA5</th>
+                    <th>PA7</th>
+                    <th>PC6</th>
+                    <th>PC4</th>
+                    <th>PC2</th>
+                    <th>PC0</th>
+                    <th>PG2</th>
+                    <th>PG0</th>
+                    <th>PL6</th>
+                    <th>PL4</th>
+                    <th>PL2</th>
+                    <th>PL0</th>
+                    <th>PB2</th>
+                    <th>PB0</th>
+                </tr>
+                <tr>
+                    <th>23</th>
+                    <th>25</th>
+                    <th>27</th>
+                    <th>29</th>
+                    <th>31</th>
+                    <th>33</th>
+                    <th>35</th>
+                    <th>37</th>
+                    <th>39</th>
+                    <th>41</th>
+                    <th>43</th>
+                    <th>45</th>
+                    <th>47</th>
+                    <th>49</th>
+                    <th>51</th>
+                    <th>53</th>
+                </tr>
+            </thead>
+            <tbody id="bigboyport">
+                <tr id="bigboy-odds">
+                    <th id="p23">0</th>
+                    <th id="p25">0</th>
+                    <th id="p27">0</th>
+                    <th id="p29">0</th>
+                    <th id="p31">0</th>
+                    <th id="p33">0</th>
+                    <th id="p35">0</th>
+                    <th id="p37">0</th>
+                    <th id="p39" class="data">0</th>
+                    <th id="p41" class="data">0</th>
+                    <th id="p43" class="data">0</th>
+                    <th id="p45" class="data">0</th>
+                    <th id="p47" class="data">0</th>
+                    <th id="p49" class="data">0</th>
+                    <th id="p51" class="data">0</th>
+                    <th id="p53" class="data">0</th>
+                </tr>
+                <tr id="bigboy-evens">
+                    <th id="p22" class="address">0</th>
+                    <th id="p24" class="address">0</th>
+                    <th id="p26" class="address">0</th>
+                    <th id="p28" class="address">0</th>
+                    <th id="p30" class="address">0</th>
+                    <th id="p32" class="address">0</th>
+                    <th id="p34" class="address">0</th>
+                    <th id="p36" class="address">0</th>
+                    <th id="p38" class="address">0</th>
+                    <th id="p40" class="address">0</th>
+                    <th id="p42" class="address">0</th>
+                    <th id="p44" class="address">0</th>
+                    <th id="p46" class="address">0</th>
+                    <th id="p48" class="address">0</th>
+                    <th id="p50" class="address">0</th>
+                    <th id="p52" class="address">0</th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>22</th>
+                    <th>24</th>
+                    <th>26</th>
+                    <th>28</th>
+                    <th>30</th>
+                    <th>32</th>
+                    <th>34</th>
+                    <th>36</th>
+                    <th>38</th>
+                    <th>40</th>
+                    <th>42</th>
+                    <th>44</th>
+                    <th>46</th>
+                    <th>48</th>
+                    <th>50</th>
+                    <th>52</th>
+                </tr>
+                <tr>
+                    <th>PA0</th>
+                    <th>PA2</th>
+                    <th>PA4</th>
+                    <th>PA6</th>
+                    <th>PC7</th>
+                    <th>PC5</th>
+                    <th>PC3</th>
+                    <th>PC1</th>
+                    <th>PD7</th>
+                    <th>PG1</th>
+                    <th>PL7</th>
+                    <th>PL5</th>
+                    <th>PL3</th>
+                    <th>PL1</th>
+                    <th>PB3</th>
+                    <th>PB1</th>
+                </tr>
+            </tfoot>
+        </table>
+        <br><br><hr><br><br>
+        <h3>All values are expected to be hexadecimal.</h3>
+        <label for="porta">PORTA=</label>
+        <input type="text" id="porta" value="0"><br><br>
+        <label for="porta">PORTB=</label>
+        <input type="text" id="portb" value="0"><br><br>
+        <label for="porta">PORTC=</label>
+        <input type="text" id="portc" value="0"><br><br>
+        <label for="porta">PORTD=</label>
+        <input type="text" id="portd" value="0"><br><br>
+        <label for="porta">PORTG=</label>
+        <input type="text" id="portg" value="0"><br><br>
+        <label for="porta">PORTL=</label>
+        <input type="text" id="portl" value="0"><br><br>
+        <br><br>
+        <button id="runprgm" onclick="onButton();">Submit</button>
+    </body>
+    <script src="script.js"></script>
+</html>
